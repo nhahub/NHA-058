@@ -24,42 +24,79 @@ A comprehensive URL shortener application built with Flask, containerized with D
 ## Project Structure
 
 ```
+# Root project directory
 NHA-058/
+# Git ignore file
 ├── .gitignore
+# Terraform configuration for EKS cluster
 ├── eks.tf
+# IAM roles and policies
 ├── iam.tf
+# Jenkins admin password file
 ├── jenkins_password.txt
+# Script to retrieve Jenkins password
 ├── jenkins-password.sh
+# Jenkins pipeline definition
 ├── Jenkinsfile
+# Terraform outputs
 ├── outputs.tf
+# AWS provider configuration
 ├── provider.tf
+# Project documentation
 ├── README.md
+# Security groups configuration
 ├── security_groups.tf
+# Terraform variables file
 ├── terraform.tfvars
+# Variable definitions
 ├── variables.tf
+# VPC configuration
 ├── vpc.tf
+# Application source code directory
 ├── app/
+│   # Flask application code
 │   ├── app.py
+│   # Docker image definition
 │   ├── Dockerfile
+│   # HTML interface
 │   ├── index.html
+│   # Application documentation
 │   ├── README.md
+│   # Python dependencies
 │   ├── requirements.txt
+│   # Static files directory
 │   └── static/
+│       # Landing page background image
 │       └── Landing_bg.png
+# Kubernetes manifests directory
 ├── k8s/
+│   # Application deployment manifest
 │   ├── app-deployment.yaml
+│   # Application namespace
 │   ├── app-namespace.yaml
+│   # Application service
 │   ├── app-service.yaml
+│   # Jenkins deployment manifest
 │   ├── jenkins-deployment.yaml
+│   # Jenkins namespace
 │   ├── jenkins-namespace.yaml
+│   # Jenkins persistent volume claim
 │   ├── jenkins-pvc.yaml
+│   # Jenkins RBAC role binding
 │   ├── jenkins-rbac-binding.yaml
+│   # Jenkins RBAC role
 │   ├── jenkins-rbac-role.yaml
+│   # Jenkins service account
 │   ├── jenkins-sa.yaml
+│   # Jenkins service
 │   ├── jenkins-service.yaml
+│   # EBS storage class
 │   └── storageclass-ebs.yaml
+# Source images directory
 └── src/
+    # Architecture diagram image
     ├── Graduation Project.png
+    # Landing page background image
     └── Landing_bg.png
 ```
 
