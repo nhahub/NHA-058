@@ -24,80 +24,43 @@ A comprehensive URL shortener application built with Flask, containerized with D
 ## Project Structure
 
 ```
-# Root project directory
-NHA-058/
-# Git ignore file
-├── .gitignore
-# Terraform configuration for EKS cluster
-├── eks.tf
-# IAM roles and policies
-├── iam.tf
-# Jenkins admin password file
-├── jenkins_password.txt
-# Script to retrieve Jenkins password
-├── jenkins-password.sh
-# Jenkins pipeline definition
-├── Jenkinsfile
-# Terraform outputs
-├── outputs.tf
-# AWS provider configuration
-├── provider.tf
-# Project documentation
-├── README.md
-# Security groups configuration
-├── security_groups.tf
-# Terraform variables file
-├── terraform.tfvars
-# Variable definitions
-├── variables.tf
-# VPC configuration
-├── vpc.tf
-# Application source code directory
-├── app/
-│   # Flask application code
-│   ├── app.py
-│   # Docker image definition
-│   ├── Dockerfile
-│   # HTML interface
-│   ├── index.html
-│   # Application documentation
-│   ├── README.md
-│   # Python dependencies
-│   ├── requirements.txt
-│   # Static files directory
-│   └── static/
-│       # Landing page background image
-│       └── Landing_bg.png
-# Kubernetes manifests directory
-├── k8s/
-│   # Application deployment manifest
-│   ├── app-deployment.yaml
-│   # Application namespace
-│   ├── app-namespace.yaml
-│   # Application service
-│   ├── app-service.yaml
-│   # Jenkins deployment manifest
-│   ├── jenkins-deployment.yaml
-│   # Jenkins namespace
-│   ├── jenkins-namespace.yaml
-│   # Jenkins persistent volume claim
-│   ├── jenkins-pvc.yaml
-│   # Jenkins RBAC role binding
-│   ├── jenkins-rbac-binding.yaml
-│   # Jenkins RBAC role
-│   ├── jenkins-rbac-role.yaml
-│   # Jenkins service account
-│   ├── jenkins-sa.yaml
-│   # Jenkins service
-│   ├── jenkins-service.yaml
-│   # EBS storage class
-│   └── storageclass-ebs.yaml
-# Source images directory
-└── src/
-    # Architecture diagram image
-    ├── Graduation Project.png
-    # Landing page background image
-    └── Landing_bg.png
+NHA-058/                       # Root project directory
+├── .gitignore                 # Git ignore file
+├── eks.tf                     # Terraform configuration for EKS cluster
+├── iam.tf                     # IAM roles and policies
+├── jenkins_password.txt       # Jenkins admin password file
+├── jenkins-password.sh        # Script to retrieve Jenkins password
+├── Jenkinsfile                # Jenkins pipeline definition
+├── outputs.tf                 # Terraform outputs
+├── provider.tf                # AWS provider configuration
+├── README.md                  # Project documentation
+├── security_groups.tf         # Security groups configuration
+├── terraform.tfvars           # Terraform variables file
+├── variables.tf               # Variable definitions
+├── vpc.tf                     # VPC configuration
+├── app/                       # Application source code directory
+│   ├── app.py                 # Flask application code
+│   ├── Dockerfile             # Docker image definition
+│   ├── index.html             # HTML interface
+│   ├── README.md              # Application documentation
+│   ├── requirements.txt       # Python dependencies
+│   └── static/                # Static files directory
+│       └── Landing_bg.png     # Landing page background image
+├── k8s/                       # Kubernetes manifests directory
+│   ├── app-deployment.yaml    # Application deployment manifest
+│   ├── app-namespace.yaml     # Application namespace
+│   ├── app-service.yaml       # Application service
+│   ├── jenkins-deployment.yaml# Jenkins deployment manifest
+│   ├── jenkins-namespace.yaml # Jenkins namespace
+│   ├── jenkins-pvc.yaml       # Jenkins persistent volume claim
+│   ├── jenkins-rbac-binding.yaml# Jenkins RBAC role binding
+│   ├── jenkins-rbac-role.yaml # Jenkins RBAC role
+│   ├── jenkins-sa.yaml        # Jenkins service account
+│   ├── jenkins-service.yaml   # Jenkins service
+│   └── storageclass-ebs.yaml  # EBS storage class
+└── src/                       # Source images directory
+    ├── Graduation Project.png # Architecture diagram image
+    └── Landing_bg.png         # Landing page background image
 ```
 
 ## Project Description
