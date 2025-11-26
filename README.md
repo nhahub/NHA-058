@@ -1,4 +1,4 @@
-# DEPI Graduation Project: URL Shortener on AWS EKS
+# DEPI Graduation Project: URL Shortener on AWS EKS using Terraform
 
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Terraform](https://img.shields.io/badge/Terraform-1.0+-623CE4)](https://www.terraform.io/)
