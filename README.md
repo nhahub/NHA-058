@@ -21,6 +21,48 @@ A comprehensive URL shortener application built with Flask, containerized with D
 - [Contributing](#contributing)
 - [License](#license)
 
+## Project Structure
+
+```
+NHA-058/
+├── .gitignore
+├── eks.tf
+├── iam.tf
+├── jenkins_password.txt
+├── jenkins-password.sh
+├── Jenkinsfile
+├── outputs.tf
+├── provider.tf
+├── README.md
+├── security_groups.tf
+├── terraform.tfvars
+├── variables.tf
+├── vpc.tf
+├── app/
+│   ├── app.py
+│   ├── Dockerfile
+│   ├── index.html
+│   ├── README.md
+│   ├── requirements.txt
+│   └── static/
+│       └── Landing_bg.png
+├── k8s/
+│   ├── app-deployment.yaml
+│   ├── app-namespace.yaml
+│   ├── app-service.yaml
+│   ├── jenkins-deployment.yaml
+│   ├── jenkins-namespace.yaml
+│   ├── jenkins-pvc.yaml
+│   ├── jenkins-rbac-binding.yaml
+│   ├── jenkins-rbac-role.yaml
+│   ├── jenkins-sa.yaml
+│   ├── jenkins-service.yaml
+│   └── storageclass-ebs.yaml
+└── src/
+    ├── Graduation Project.png
+    └── Landing_bg.png
+```
+
 ## Project Description
 
 This project demonstrates a full-stack DevOps implementation of a URL shortener service. The application is a simple Flask-based API that allows users to shorten long URLs into short codes, store them in an SQLite database, and redirect to the original URLs. The infrastructure is provisioned using Terraform, deployed on Kubernetes (EKS), and automated via Jenkins pipelines.
@@ -221,3 +263,15 @@ Example usage with curl:
 ```bash
 curl -X POST http://<loadbalancer-url>/shorten -H "Content-Type: application/json" -d '{"url": "https://www.google.com"}'
 ```
+
+## Team Members
+
+Group 58
+
+| Name | Email |
+|------|-------|
+| Ibrahim Ahmed Ahmed Mintal ( Team Leader) | ibrahim.mintal@gmail.com |
+| Mahmoud Ahmed Mohamed | mahmoud.ahmedd198@gmail.com |
+| Mohamed Nasser Mohamed | mn265944@gmail.com |
+| George Michel Fawzy | georgesmichel926@gmail.com |
+| Mohamed Fathy Abdelrazik | engmohamedalex@gmail.com |
